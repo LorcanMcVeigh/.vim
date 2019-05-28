@@ -1,0 +1,52 @@
+" Dont act like vi 
+set nocompatible
+
+" gives color to syntax 
+syntax enable 
+set backspace=indent,eol,start
+filetype plugin indent on 
+
+" Seaching files 
+" can recursivley look down subfolders for file 
+set path+=**
+
+" lets tab auto-complete on finding files 
+set wildmenu 
+
+" line numbers 
+set number  
+set ruler 
+
+" show match brackets 
+set showmatch
+
+"disbale arrow keys 
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <right> <nop>
+inoremap <left> <nop>
+
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <right> <nop>
+noremap <left> <nop>
+
+" tab 
+set expandtab
+set smarttab 
+set shiftwidth=4 
+set tabstop=4
+ 
+" no backup files or swap files 
+set nobackup
+set nowritebackup
+set noswapfile
+
+" make search case insenstive 
+set hlsearch 
+set incsearch 
+set ignorecase 
+set smartcase 
+" Tag jumping 
+command! MakeTags !ctages -R 
+
